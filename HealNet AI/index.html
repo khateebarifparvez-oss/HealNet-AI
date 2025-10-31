@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealNet - AI Health Diagnosis Assistant</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/export.png">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">H</div>
+                <div class="logo-text">
+                    <h1>HealNet</h1>
+                    <p>AI Health Assistant</p>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#diagnosis">Start Diagnosis</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Early Diagnosis Can Save Lives</h1>
+                <p>HealNet uses advanced AI to analyze your symptoms and medical history to predict potential health
+                    risks before they become serious problems.</p>
+                <button class="cta-button" id="startDiagnosisBtn">Start Health Assessment</button>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/sample.webp" alt="AI Health Assistant">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>How HealNet Works</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">1</div>
+                    <h3>Comprehensive Assessment</h3>
+                    <p>We analyze your symptoms, medical history, lifestyle, and environmental factors.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">2</div>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Our advanced algorithms identify patterns and potential health risks.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">3</div>
+                    <h3>Personalized Insights</h3>
+                    <p>Get tailored health recommendations and early warnings for potential issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diagnosis Form Section -->
+    <section id="diagnosis" class="diagnosis-form">
+        <div class="container">
+            <h2>Health Assessment</h2>
+            <p class="subtitle">Please provide accurate information for the best analysis</p>
+
+            <form id="healthForm">
+                <!-- Basic Information -->
+                <div class="form-section active" id="basic-info">
+                    <h3>Basic Information</h3>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" min="1" max="120" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location (City, State)</label>
+                        <input type="text" id="location" name="location" placeholder="e.g., Delhi, India" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="profession">Profession</label>
+                        <input type="text" id="profession" name="profession" placeholder="e.g., Software Engineer"
+                            required>
+                    </div>
+                    <button type="button" class="next-btn" data-next="symptoms">Next: Symptoms</button>
+                </div>
+
+                <!-- Symptoms Section -->
+                <div class="form-section" id="symptoms-section">
+                    <h3>Current Symptoms</h3>
+                    <p>Select all symptoms you're currently experiencing:</p>
+
+                    <div class="symptoms-grid">
+                        <div class="symptom-category">
+                            <h4>General Symptoms</h4>
+                            <div class="symptom-options">
+                                <label><input type="checkbox" name="symptoms" value="fatigue"> Fatigue</label>
+                                <label><input type="checkbox" name="symptoms" value="fever"> Fever</label>
+                                <label><input type="checkbox" name="symptoms" value="weight_loss"> Unexplained Weight
+                                    Loss</label>
+                                <label><input type="checkbox" name="symptoms" value="weight_gain"> Unexplained Weight
+                                    Gain</label>
+                                <label><input type="checkbox" name="symptoms" value="night_sweats"> Night Sweats</label>
+                            </div>
+                        </div>
+
+                        <div class="symptom-category">
+                            <h4>Cardiac & Respiratory</h4>
+                            <div class="symptom-options">
+                                <label><input type="checkbox" name="symptoms" value="chest_pain"> Chest Pain</label>
+                                <label><input type="checkbox" name="symptoms" value="shortness_breath"> Shortness of
+                                    Breath</label>
+                                <label><input type="checkbox" name="symptoms" value="palpitations"> Heart
+                                    Palpitations</label>
+                                <label><input type="checkbox" name="symptoms" value="cough"> Persistent Cough</label>
+                                <label><input type="checkbox" name="symptoms" value="wheezing"> Wheezing</label>
+                            </div>
+                        </div>
+
+                        <div class="symptom-category">
+                            <h4>Digestive System</h4>
+                            <div class="symptom-options">
+                                <label><input type="checkbox" name="symptoms" value="abdominal_pain"> Abdominal
+                                    Pain</label>
+                                <label><input type="checkbox" name="symptoms" value="nausea"> Nausea</label>
+                                <label><input type="checkbox" name="symptoms" value="diarrhea"> Diarrhea</label>
+                                <label><input type="checkbox" name="symptoms" value="constipation"> Constipation</label>
+                                <label><input type="checkbox" name="symptoms" value="blood_stool"> Blood in
+                                    Stool</label>
+                            </div>
+                        </div>
+
+                        <div class="symptom-category">
+                            <h4>Neurological</h4>
+                            <div class="symptom-options">
+                                <label><input type="checkbox" name="symptoms" value="headache"> Headache</label>
+                                <label><input type="checkbox" name="symptoms" value="dizziness"> Dizziness</label>
+                                <label><input type="checkbox" name="symptoms" value="numbness">
+                                    Numbness/Tingling</label>
+                                <label><input type="checkbox" name="symptoms" value="vision_changes"> Vision
+                                    Changes</label>
+                                <label><input type="checkbox" name="symptoms" value="memory_problems"> Memory
+                                    Problems</label>
+                            </div>
+                        </div>
+
+                        <div class="symptom-category">
+                            <h4>Mental Health</h4>
+                            <div class="symptom-options">
+                                <label><input type="checkbox" name="symptoms" value="anxiety"> Anxiety</label>
+                                <label><input type="checkbox" name="symptoms" value="depression"> Depression</label>
+                                <label><input type="checkbox" name="symptoms" value="insomnia"> Insomnia</label>
+                                <label><input type="checkbox" name="symptoms" value="mood_swings"> Mood Swings</label>
+                                <label><input type="checkbox" name="symptoms" value="stress"> High Stress</label>
+                            </div>
+                        </div>
+
+                        <div class="symptom-category">
+                            <h4>Other Symptoms</h4>
+                            <div class="symptom-options">
+                                <label><input type="checkbox" name="symptoms" value="skin_changes"> Skin Changes</label>
+                                <label><input type="checkbox" name="symptoms" value="joint_pain"> Joint Pain</label>
+                                <label><input type="checkbox" name="symptoms" value="frequent_infections"> Frequent
+                                    Infections</label>
+                                <label><input type="checkbox" name="symptoms" value="swelling"> Swelling in
+                                    Limbs</label>
+                                <label><input type="checkbox" name="symptoms" value="other"> Other (please describe in
+                                    notes)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="symptom_notes">Additional Symptom Details</label>
+                        <textarea id="symptom_notes" name="symptom_notes"
+                            placeholder="Describe your symptoms in detail, including duration, severity, and any patterns you've noticed..."></textarea>
+                    </div>
+
+                    <div class="form-navigation">
+                        <button type="button" class="prev-btn" data-prev="basic-info">Previous</button>
+                        <button type="button" class="next-btn" data-next="lifestyle">Next: Lifestyle</button>
+                    </div>
+                </div>
+
+                <!-- Lifestyle Section -->
+                <div class="form-section" id="lifestyle-section">
+                    <h3>Lifestyle & Habits</h3>
+
+                    <div class="form-group">
+                        <label>Do you smoke?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="smoking" value="never" checked> Never</label>
+                            <label><input type="radio" name="smoking" value="former"> Former Smoker</label>
+                            <label><input type="radio" name="smoking" value="current"> Current Smoker</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Do you consume alcohol?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="alcohol" value="never" checked> Never</label>
+                            <label><input type="radio" name="alcohol" value="occasional"> Occasional</label>
+                            <label><input type="radio" name="alcohol" value="regular"> Regular</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Physical Activity Level</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="activity" value="sedentary" checked> Sedentary (mostly
+                                sitting)</label>
+                            <label><input type="radio" name="activity" value="light"> Light (walking
+                                occasionally)</label>
+                            <label><input type="radio" name="activity" value="moderate"> Moderate (exercise 1-3
+                                times/week)</label>
+                            <label><input type="radio" name="activity" value="active"> Active (exercise 4+
+                                times/week)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Average Sleep Duration (per night)</label>
+                        <select id="sleep" name="sleep" required>
+                            <option value="">Select Hours</option>
+                            <option value="less5">Less than 5 hours</option>
+                            <option value="5-6">5-6 hours</option>
+                            <option value="7-8" selected>7-8 hours</option>
+                            <option value="more8">More than 8 hours</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Do you work night shifts?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="night_shift" value="no" checked> No</label>
+                            <label><input type="radio" name="night_shift" value="occasional"> Occasionally</label>
+                            <label><input type="radio" name="night_shift" value="regular"> Regularly</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Daily Screen Time</label>
+                        <select id="screen_time" name="screen_time" required>
+                            <option value="">Select Hours</option>
+                            <option value="less2">Less than 2 hours</option>
+                            <option value="2-4">2-4 hours</option>
+                            <option value="4-8">4-8 hours</option>
+                            <option value="more8">More than 8 hours</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Diet Type</label>
+                        <select id="diet" name="diet" required>
+                            <option value="">Select Diet</option>
+                            <option value="balanced">Balanced</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="vegan">Vegan</option>
+                            <option value="high_meat">High Meat Consumption</option>
+                            <option value="junk_food">Mostly Junk Food</option>
+                        </select>
+                    </div>
+
+                    <div class="form-navigation">
+                        <button type="button" class="prev-btn" data-prev="symptoms">Previous</button>
+                        <button type="button" class="next-btn" data-next="medical-history">Next: Medical
+                            History</button>
+                    </div>
+                </div>
+
+                <!-- Medical History Section -->
+                <div class="form-section" id="medical-history-section">
+                    <h3>Medical History</h3>
+
+                    <div class="form-group">
+                        <label>Have you been diagnosed with any of these conditions before?</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="past_conditions" value="diabetes"> Diabetes</label>
+                            <label><input type="checkbox" name="past_conditions" value="hypertension"> Hypertension
+                                (High Blood Pressure)</label>
+                            <label><input type="checkbox" name="past_conditions" value="heart_disease"> Heart
+                                Disease</label>
+                            <label><input type="checkbox" name="past_conditions" value="thyroid"> Thyroid Issues</label>
+                            <label><input type="checkbox" name="past_conditions" value="asthma"> Asthma</label>
+                            <label><input type="checkbox" name="past_conditions" value="cancer"> Cancer</label>
+                            <label><input type="checkbox" name="past_conditions" value="kidney_disease"> Kidney
+                                Disease</label>
+                            <label><input type="checkbox" name="past_conditions" value="liver_disease"> Liver
+                                Disease</label>
+                            <label><input type="checkbox" name="past_conditions" value="mental_health"> Mental Health
+                                Conditions</label>
+                            <label><input type="checkbox" name="past_conditions" value="other_condition"> Other (please
+                                specify in notes)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="past_condition_details">Details about past conditions</label>
+                        <textarea id="past_condition_details" name="past_condition_details"
+                            placeholder="If you selected any conditions above, please provide details such as when you were diagnosed, treatment received, and current status..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Family Medical History (select conditions that run in your family)</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="family_history" value="diabetes"> Diabetes</label>
+                            <label><input type="checkbox" name="family_history" value="hypertension">
+                                Hypertension</label>
+                            <label><input type="checkbox" name="family_history" value="heart_disease"> Heart
+                                Disease</label>
+                            <label><input type="checkbox" name="family_history" value="stroke"> Stroke</label>
+                            <label><input type="checkbox" name="family_history" value="cancer"> Cancer</label>
+                            <label><input type="checkbox" name="family_history" value="thyroid"> Thyroid Issues</label>
+                            <label><input type="checkbox" name="family_history" value="asthma"> Asthma/Allergies</label>
+                            <label><input type="checkbox" name="family_history" value="mental_health"> Mental Health
+                                Conditions</label>
+                            <label><input type="checkbox" name="family_history" value="kidney_disease"> Kidney
+                                Disease</label>
+                            <label><input type="checkbox" name="family_history" value="other_family"> Other (please
+                                specify in notes)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="family_history_details">Family History Details</label>
+                        <textarea id="family_history_details" name="family_history_details"
+                            placeholder="Specify which family members had these conditions and at what age they were diagnosed..."></textarea>
+                    </div>
+
+                    <div class="form-navigation">
+                        <button type="button" class="prev-btn" data-prev="lifestyle">Previous</button>
+                        <button type="button" class="next-btn" data-next="review">Next: Review</button>
+                    </div>
+                </div>
+
+                <!-- Review Section -->
+                <div class="form-section" id="review-section">
+                    <h3>Review Your Information</h3>
+                    <div id="review-summary">
+                        <!-- Summary will be populated by JavaScript -->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additional_notes">Any Additional Information</label>
+                        <textarea id="additional_notes" name="additional_notes"
+                            placeholder="Is there anything else you think we should know about your health or lifestyle?"></textarea>
+                    </div>
+
+                    <div class="form-navigation">
+                        <button type="button" class="prev-btn" data-prev="medical-history">Previous</button>
+                        <button type="submit" class="submit-btn" id="submitForm">Submit for Analysis</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results" style="display: none;">
+        <div class="container">
+            <h2>Your Health Assessment Results</h2>
+            <div class="results-content">
+                <div class="risk-level" id="riskLevel">
+                    <!-- Risk level will be populated by JavaScript -->
+                </div>
+                <div class="potential-conditions" id="potentialConditions">
+                    <!-- Potential conditions will be populated by JavaScript -->
+                </div>
+                <div class="recommendations" id="recommendations">
+                    <!-- Recommendations will be populated by JavaScript -->
+                </div>
+
+                <!-- AI Assistant Section -->
+                <div class="ai-assistant" id="aiAssistant">
+                    <h3>AI Health Assistant</h3>
+                    <div class="ai-chat-container">
+                        <div class="ai-messages" id="aiMessages">
+                            <div class="ai-message bot">
+                                <div class="message-content">
+                                    Hello! I'm your AI Health Assistant. I've analyzed your health assessment and I'm
+                                    here to provide personalized health recommendations and answer any questions you
+                                    might have about your results.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ai-input-container">
+                            <input type="text" id="aiUserInput"
+                                placeholder="Ask me anything about your health results..." class="ai-input">
+                            <button id="aiSendButton" class="ai-send-btn">Send</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-steps">
+                    <h3>Next Steps</h3>
+                    <p>Based on our analysis, we recommend:</p>
+                    <ul id="nextStepsList">
+                        <!-- Next steps will be populated by JavaScript -->
+                    </ul>
+                    <div class="disclaimer">
+                        <p><strong>Disclaimer:</strong> This assessment is for informational purposes only and is not a
+                            substitute for professional medical advice, diagnosis, or treatment. Always seek the advice
+                            of your physician or other qualified health provider with any questions you may have
+                            regarding a medical condition.</p>
+                    </div>
+                </div>
+                <button class="cta-button" id="newAssessmentBtn">Start New Assessment</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about HealNet or your health assessment, please reach out to us.</p>
+            <div class="contact-info">
+                <p>Email: info@healnetai.com</p>
+                <p>Phone: +91 9849866884</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 HealNet - Team Code Cortex. All rights reserved.</p>
+            <p>Assistance for your better health</p>
+        </div>
+    </footer>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+        <div class="spinner"></div>
+        <p>Analyzing your health information...</p>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/symptom-checker.js"></script>
+    <script src="scripts/ai-engine.js"></script>
+    <script src="scripts/ai-assistant.js"></script>
+</body>
+
+</html>

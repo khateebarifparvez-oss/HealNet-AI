@@ -1,0 +1,86 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .navbar li {
+        margin: 0 0.5rem;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .symptoms-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .prev-btn,
+    .next-btn,
+    .submit-btn {
+        width: 100%;
+    }
+
+    .ai-message .message-content {
+        max-width: 85%;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .diagnosis-form h2,
+    .results h2,
+    .about h2,
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-section {
+        padding: 1rem;
+    }
+
+    .symptom-category {
+        padding: 1rem;
+    }
+
+    .ai-input-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .ai-send-btn {
+        margin-left: 0;
+        border-radius: 5px;
+    }
+}
