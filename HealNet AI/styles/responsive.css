@@ -1,0 +1,711 @@
+/* ===================================================================
+   HealNet AI - Premium Responsive Design
+   Mobile-First • Adaptive • Accessible
+   =================================================================== */
+
+/* ===================================================================
+   Large Tablets & Small Desktops (992px - 1199px)
+   =================================================================== */
+
+@media (max-width: 1199px) {
+    :root {
+        --text-6xl: 3.5rem;    /* 56px */
+        --text-5xl: 2.75rem;   /* 44px */
+        --text-4xl: 2rem;      /* 32px */
+    }
+    
+    .container {
+        padding: 0 var(--space-5);
+    }
+    
+    .hero .container {
+        gap: var(--space-12);
+    }
+    
+    .features {
+        gap: var(--space-6);
+    }
+}
+
+/* ===================================================================
+   Tablets (768px - 991px)
+   =================================================================== */
+
+@media (max-width: 991px) {
+    :root {
+        --text-6xl: 3rem;      /* 48px */
+        --text-5xl: 2.5rem;    /* 40px */
+        --text-4xl: 1.875rem;  /* 30px */
+    }
+    
+    .container {
+        padding: 0 var(--space-4);
+    }
+    
+    /* Header Adjustments */
+    .header .container {
+        min-height: 70px;
+    }
+    
+    .logo-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+    }
+    
+    .logo-text h1 {
+        font-size: 24px;
+    }
+    
+    .navbar ul {
+        gap: var(--space-1);
+    }
+    
+    .navbar a {
+        padding: var(--space-2) var(--space-4);
+        font-size: var(--text-sm);
+    }
+    
+    /* Hero Section - Stack Layout */
+    .hero {
+        padding: var(--space-20) 0;
+    }
+    
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: var(--space-12);
+    }
+    
+    .hero-content {
+        text-align: center;
+    }
+    
+    .hero-content h1 {
+        font-size: var(--text-5xl);
+    }
+    
+    .hero-content p {
+        max-width: 100%;
+    }
+    
+    .cta-button {
+        width: auto;
+        min-width: 240px;
+    }
+    
+    /* Features Grid */
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+    
+    /* Form Adjustments */
+    .symptoms-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+    }
+    
+    .lifestyle-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact Grid */
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-8);
+    }
+}
+
+/* ===================================================================
+   Mobile Landscape & Small Tablets (576px - 767px)
+   =================================================================== */
+
+@media (max-width: 767px) {
+    :root {
+        --text-6xl: 2.5rem;    /* 40px */
+        --text-5xl: 2rem;      /* 32px */
+        --text-4xl: 1.75rem;   /* 28px */
+        --text-3xl: 1.5rem;    /* 24px */
+    }
+    
+    .container {
+        padding: 0 var(--space-4);
+    }
+    
+    /* Header - Mobile Stack */
+    .header .container {
+        flex-direction: column;
+        gap: var(--space-4);
+        padding: var(--space-4);
+        min-height: auto;
+    }
+    
+    .logo {
+        justify-content: center;
+    }
+    
+    .logo-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+    }
+    
+    .logo-text h1 {
+        font-size: 22px;
+    }
+    
+    .logo-text p {
+        font-size: 10px;
+    }
+    
+    .navbar {
+        width: 100%;
+    }
+    
+    .navbar ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: var(--space-2);
+    }
+    
+    .navbar a {
+        padding: var(--space-2) var(--space-4);
+        font-size: 13px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: var(--space-16) 0;
+    }
+    
+    .hero-content h1 {
+        font-size: var(--text-4xl);
+    }
+    
+    .hero-content p {
+        font-size: var(--text-base);
+    }
+    
+    .cta-button {
+        width: 100%;
+        padding: var(--space-4) var(--space-6);
+    }
+    
+    /* Sections */
+    .about,
+    .diagnosis-form,
+    .contact {
+        padding: var(--space-20) 0;
+    }
+    
+    .about h2,
+    .diagnosis-form h2,
+    .contact h2 {
+        font-size: var(--text-4xl);
+        margin-bottom: var(--space-12);
+    }
+    
+    /* Features - Single Column */
+    .features {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+    
+    .feature {
+        padding: var(--space-8);
+    }
+    
+    .feature-icon {
+        width: 56px;
+        height: 56px;
+        font-size: var(--text-2xl);
+    }
+    
+    /* Form */
+    #healthForm {
+        padding: var(--space-8);
+    }
+    
+    .form-section h3 {
+        font-size: var(--text-2xl);
+    }
+    
+    .symptom-category {
+        padding: var(--space-5);
+    }
+    
+    .symptom-category h4 {
+        font-size: var(--text-base);
+    }
+    
+    .symptom-options label,
+    .radio-group label {
+        gap: var(--space-2);
+        padding: var(--space-3);
+        font-size: 14px;
+    }
+    
+    .symptom-options input[type="checkbox"],
+    .symptom-options input[type="radio"],
+    .radio-group input[type="radio"],
+    .radio-group input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+    
+    /* Form Navigation */
+    .form-navigation {
+        flex-direction: column;
+    }
+    
+    .next-btn,
+    .prev-btn,
+    .submit-btn {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .next-btn:only-child {
+        min-width: auto;
+    }
+    
+    /* Results */
+    .results-section {
+        padding: var(--space-8);
+    }
+    
+    .results-section h2 {
+        font-size: var(--text-3xl);
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+    }
+    
+    /* Risk Level Box - Mobile */
+    .risk-level-box {
+        padding: var(--space-8);
+        margin-bottom: var(--space-8);
+    }
+    
+    .risk-level-badge {
+        font-size: var(--text-4xl);
+        padding: var(--space-5) var(--space-10);
+    }
+    
+    .risk-level-description {
+        font-size: var(--text-base);
+    }
+    
+    /* AI Assistant */
+    .ai-assistant {
+        padding: var(--space-6);
+    }
+    
+    .ai-assistant h3 {
+        font-size: var(--text-2xl);
+    }
+    
+    .ai-chat-container {
+        height: 450px;
+    }
+    
+    .ai-input-container {
+        padding: var(--space-4);
+        gap: var(--space-2);
+    }
+    
+    .ai-send-btn {
+        padding: var(--space-3) var(--space-5);
+    }
+    
+    /* Contact */
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+    
+    .contact-item {
+        padding: var(--space-8);
+    }
+    
+    /* Footer */
+    .footer {
+        padding: var(--space-16) 0 var(--space-8);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+}
+
+/* ===================================================================
+   Mobile Portrait (max-width: 575px)
+   =================================================================== */
+
+@media (max-width: 575px) {
+    :root {
+        --text-6xl: 2rem;      /* 32px */
+        --text-5xl: 1.75rem;   /* 28px */
+        --text-4xl: 1.5rem;    /* 24px */
+        --text-3xl: 1.25rem;   /* 20px */
+    }
+    
+    .container {
+        padding: 0 var(--space-4);
+    }
+    
+    /* Hero */
+    .hero {
+        padding: var(--space-12) 0;
+    }
+    
+    .hero-content h1 {
+        font-size: var(--text-5xl);
+        line-height: var(--leading-tight);
+    }
+    
+    .hero-content p {
+        font-size: var(--text-sm);
+    }
+    
+    /* Form */
+    #healthForm {
+        padding: var(--space-6);
+        border-radius: var(--radius-2xl);
+    }
+    
+    .form-section h3 {
+        font-size: var(--text-xl);
+    }
+    
+    .symptom-options label,
+    .radio-group label {
+        font-size: 13px;
+        padding: var(--space-2);
+    }
+    
+    /* AI Chat */
+    .ai-chat-container {
+        height: 400px;
+    }
+    
+    .ai-input-container {
+        flex-direction: column;
+        gap: var(--space-3);
+    }
+    
+    .ai-send-btn {
+        width: 100%;
+    }
+    
+    .message-content {
+        max-width: 85%;
+        padding: var(--space-3) var(--space-4);
+        font-size: var(--text-sm);
+    }
+    
+    /* Sections */
+    .about h2,
+    .diagnosis-form h2,
+    .contact h2 {
+        font-size: var(--text-3xl);
+    }
+    
+    .about .subtitle,
+    .diagnosis-form .subtitle {
+        font-size: var(--text-base);
+    }
+}
+
+/* ===================================================================
+   Extra Small Mobile (max-width: 400px)
+   =================================================================== */
+
+@media (max-width: 400px) {
+    .container {
+        padding: 0 var(--space-3);
+    }
+    
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+    
+    .logo-text h1 {
+        font-size: 18px;
+    }
+    
+    .navbar a {
+        padding: var(--space-2) var(--space-3);
+        font-size: 12px;
+    }
+    
+    #healthForm {
+        padding: var(--space-5);
+    }
+}
+
+/* ===================================================================
+   Touch Device Optimizations
+   =================================================================== */
+
+@media (hover: none) and (pointer: coarse) {
+    /* Larger touch targets */
+    .cta-button,
+    .next-btn,
+    .prev-btn,
+    .submit-btn,
+    .ai-send-btn {
+        min-height: 48px;
+        padding: var(--space-4) var(--space-6);
+    }
+    
+    .navbar a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        padding: var(--space-3) var(--space-4);
+    }
+    
+    .symptom-options label,
+    .radio-group label {
+        min-height: 48px;
+        padding: var(--space-3) var(--space-4);
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        min-height: 48px;
+        padding: var(--space-4);
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    .ai-input {
+        min-height: 48px;
+        font-size: 16px;
+    }
+    
+    /* Remove hover effects on touch devices */
+    .feature:hover,
+    .contact-item:hover,
+    .result-card:hover {
+        transform: none;
+    }
+}
+
+/* ===================================================================
+   Landscape Orientation Optimizations
+   =================================================================== */
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        padding: 100px 0 var(--space-12);
+    }
+    
+    .ai-chat-container {
+        height: 350px;
+    }
+    
+    .hero-content h1 {
+        font-size: var(--text-4xl);
+    }
+}
+
+/* ===================================================================
+   Reduced Motion Preferences
+   =================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ===================================================================
+   High Contrast Mode
+   =================================================================== */
+
+@media (prefers-contrast: high) {
+    :root {
+        --border-light: var(--gray-400);
+        --border-medium: var(--gray-500);
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        border-width: 3px;
+    }
+    
+    .cta-button,
+    .next-btn,
+    .submit-btn {
+        border: 3px solid var(--white);
+    }
+}
+
+/* ===================================================================
+   Dark Mode Support (Optional)
+   =================================================================== */
+
+@media (prefers-color-scheme: dark) {
+    /* Uncomment to enable dark mode */
+    /*
+    :root {
+        --white: #1A202C;
+        --gray-50: #2D3748;
+        --gray-100: #374151;
+        --gray-900: #F9FAFB;
+        --text-primary: #F9FAFB;
+        --text-secondary: #CBD5E0;
+        --bg-primary: #1A202C;
+        --bg-secondary: #2D3748;
+    }
+    */
+}
+
+/* ===================================================================
+   Print Optimizations
+   =================================================================== */
+
+@media print {
+    @page {
+        margin: 2cm;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+    
+    .header,
+    .navbar,
+    .hero-image,
+    .cta-button,
+    .next-btn,
+    .prev-btn,
+    .submit-btn,
+    .ai-assistant,
+    .footer,
+    .form-navigation {
+        display: none !important;
+    }
+    
+    .hero,
+    .about,
+    .diagnosis-form,
+    .contact {
+        padding: 20px 0;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .feature,
+    .result-card,
+    .symptom-category {
+        page-break-inside: avoid;
+        border: 1px solid #000;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    h1, h2, h3, h4 {
+        page-break-after: avoid;
+        color: #000;
+    }
+    
+    a {
+        text-decoration: underline;
+        color: #000;
+    }
+    
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+    }
+}
+
+/* ===================================================================
+   Accessibility Enhancements
+   =================================================================== */
+
+/* Skip to main content link */
+.skip-to-main {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary);
+    color: var(--white);
+    padding: var(--space-2) var(--space-4);
+    text-decoration: none;
+    z-index: var(--z-tooltip);
+}
+
+.skip-to-main:focus {
+    top: 0;
+}
+
+/* Focus indicators for keyboard navigation */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Screen reader only class */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* ===================================================================
+   Container Queries (Modern Browsers)
+   =================================================================== */
+
+@supports (container-type: inline-size) {
+    .feature {
+        container-type: inline-size;
+    }
+    
+    @container (max-width: 300px) {
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            font-size: var(--text-xl);
+        }
+        
+        .feature h3 {
+            font-size: var(--text-lg);
+        }
+    }
+}
