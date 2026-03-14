@@ -1,3 +1,6 @@
+https://lucent-kitsune-4f354c.netlify.app/
+
+
 Overview
 HealNet AI is an intelligent web-based health assistance platform that leverages artificial intelligence to provide early symptom analysis, personalized health recommendations, and continuous virtual health support. The platform aims to bridge the gap in early healthcare intervention by making medical guidance more accessible and proactive.
 
@@ -187,9 +190,9 @@ Code Cortex - Development Team
  Support
 For support and queries:
 
- Email: support@healnetai.com
+ 
 
-Website: www.healnetai.com
+Website: https://lucent-kitsune-4f354c.netlify.app/
 
  Issues: GitHub Issues
 
