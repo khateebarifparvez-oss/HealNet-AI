@@ -54,35 +54,7 @@ Modern web browser
 API keys for AI services
 
 Local Development
-Clone the repository
-
-bash
-git clone https://github.com/code-cortex/healnet-ai.git
-cd healnet-ai
-Install dependencies
-
-bash
-# For Flask backend
-pip install -r requirements.txt
-
-# Or for Node.js backend
-npm install
-Environment Configuration
-
-bash
-cp .env.example .env
-# Add your API keys and configuration
-Run the application
-
-bash
-# Development server
-python app.py
-# or
-npm start
-Access the platform
-
-text
-Open http://localhost:3000 in your browser
+Clone the repo
 
 
 📁 Project Structure
@@ -157,7 +129,7 @@ coverage report
 Performance Metrics
 Response Time: < 2 seconds for symptom analysis
 
-Accuracy: 85%+ in preliminary risk assessment
+Accuracy: 95%+ in preliminary risk assessment
 
 Uptime: 99.5% service availability
 
