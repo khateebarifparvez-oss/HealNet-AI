@@ -45,9 +45,7 @@ Git - Version control
 
 Chrome DevTools - Debugging and testing
 
-Installation & Setup
-Prerequisites
-Python 3.8+ or Node.js 16+
+
 
 Modern web browser
 
@@ -115,18 +113,6 @@ POST /api/chat - AI assistant communication
 
 GET /api/recommendations - Health tips generation
 
- Testing
-bash
-# Run test suite
-python -m pytest tests/
-
-# Or for Node.js
-npm test
-
-# Coverage report
-coverage run -m pytest
-coverage report
-Performance Metrics
 Response Time: < 2 seconds for symptom analysis
 
 Accuracy: 95%+ in preliminary risk assessment
