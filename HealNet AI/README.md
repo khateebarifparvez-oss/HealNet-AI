@@ -26,7 +26,7 @@ CSS3 - Styling and responsive design
 JavaScript - Client-side interactivity
 
 Backend
-Flask - Python web framework (or Node.js alternative)
+ Node.js 
 
 RESTful APIs - Service communication
 
@@ -121,40 +121,15 @@ Uptime: 99.5% service availability
 
 Security: End-to-end data encryption
 
- Contributing
-We welcome contributions! Please see our Contributing Guidelines for details.
-
-Fork the repository
-
-Create your feature branch (git checkout -b feature/AmazingFeature)
-
-Commit your changes (git commit -m 'Add some AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
- License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
- Medical Disclaimer
+ 
+Medical Disclaimer
 Important: HealNet AI is designed for preliminary health guidance and awareness only. It is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
 
- Team
-Arif Parvez - Lead Developer & Project Architect
 
-Code Cortex - Development Team
+Website : https://boisterous-paprenjak-23ec72.netlify.app/
 
- Support
-For support and queries:
 
- 
-
-Website: https://lucent-kitsune-4f354c.netlify.app/
-
- Issues: GitHub Issues
-
- Future Enhancements
+ Future Enhancements : 
 Wearable device integration
 
 Doctor consultation booking
@@ -169,7 +144,3 @@ Telemedicine features
 
 Insurance integration
 
-<div align="center">
-Built with by Code Cortex | Making Healthcare Accessible to All
-
-</div>
